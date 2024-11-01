@@ -9,9 +9,11 @@ function selectionSort(arr) {
       if (arr[minIndex] < arr[i]) {
         [arr[i], arr[minIndex]] = [arr[minIndex], arr[i]];
       }
-      console.log("sorted :", arr);
+      console.log("selection sorting:", arr);
     }
   }
 
   return arr;
 }
+
+console.log(selectionSort([4, 3, 2, 1]));
