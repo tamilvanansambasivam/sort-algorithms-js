@@ -1,9 +1,9 @@
 function merge(arr1, arr2) {
-  let arr = []; // Initialize the result array
-  let i = 0; // // Initialize  pointer
-  let j = 0; // // Initialize  pointer
+  let arr = []; 
+  let i = 0; 
+  let j = 0; 
 
-  // Compare elements from both arrays and push the smaller element into arr
+  
   while (i < arr1.length && j < arr2.length) {
     if (arr1[i] < arr2[j]) {
       arr.push(arr1[i]);
@@ -14,13 +14,13 @@ function merge(arr1, arr2) {
     }
   }
 
-  // If there are remaining elements in arr1, push them
+
   while (i < arr1.length) {
     arr.push(arr1[i]);
     i++;
   }
 
-  // If there are remaining elements in arr2, push them
+
   while (j < arr2.length) {
     arr.push(arr2[j]);
     j++;
